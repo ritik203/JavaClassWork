@@ -1,0 +1,48 @@
+package com.sunbeam.inheritance;
+
+import java.util.Scanner;
+
+public class Person {
+	private String name;
+	private int age;
+
+	public Person() {
+
+	}
+
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	public void accept() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Name");
+		this.name = sc.next();
+		System.out.println("enter Age");
+		this.age = sc.nextInt();
+	}
+
+	public void display() {
+		System.out.println("Name : " + this.name);
+		System.out.println("Age: " + this.age);
+
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+}
