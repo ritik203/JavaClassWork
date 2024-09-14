@@ -38,7 +38,7 @@ public class EmplyoeeComparator1 {
 		for(int i =0;i<arr.length;i++) {
 			System.out.println(arr[i]);
 		}
-		
+		 
 		class Demo2 implements Comparator<EmplyoeeComparator>{
 
 			@Override
