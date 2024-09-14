@@ -1,6 +1,9 @@
 package com.sunbeam;
 
-public class Emplyoee {
+import java.util.Comparator;
+import java.util.Objects;
+
+public class Emplyoee{
 	private String name;
 	private int id;
 	private double salary;
@@ -38,6 +41,19 @@ public class Emplyoee {
 	
 	public String toString() {
 		return "Id : "+id+" Name: "+name+" Salary :"+salary;
+	}
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Emplyoee other = (Emplyoee) obj;
+		return id == other.id;
 	}
 	
 	
