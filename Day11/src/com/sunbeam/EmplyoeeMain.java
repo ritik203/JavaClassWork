@@ -22,16 +22,21 @@ public class EmplyoeeMain {
 			System.out.println(arr[i]);
 		}
 		
-		class Demo implements Comparator<Emplyoee>{
-			@Override
-			public int compare(Emplyoee x, Emplyoee y) {
-				int diff= x.getId()-y.getId();
-				return diff;
-			}
-			
-		}
+//		class Demo implements Comparator<Emplyoee>{
+//			@Override
+//			public int compare(Emplyoee x, Emplyoee y) {
+//				int diff= x.getId()-y.getId();
+//				return diff;
+//			}
+//			
+//		}
+		
+		
+		
+		
 		System.out.println("After Sorting by id Araays are :");
-		Arrays.sort(arr,new Demo());
+		
+		Arrays.sort(arr,(x,y)->-x.getId().compareTo(y.getId()));
 		
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]);

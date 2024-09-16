@@ -5,7 +5,7 @@ import java.util.Objects;
 
 public class Emplyoee{
 	private String name;
-	private int id;
+	private Integer id;
 	private double salary;
 	
 	public String getName(){
@@ -15,7 +15,7 @@ public class Emplyoee{
 		this.name=name;
 	}
 	
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 	public void setId(int id) {
